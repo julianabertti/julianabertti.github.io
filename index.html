@@ -1,188 +1,197 @@
 <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juliana Bertti — Desenvolvedora de Software</title>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juliana Bertti — Desenvolvedora de Software</title>
 <style>
-  :root {
-    --bg: #0b0f19;
-    --bg-alt: #111827;
-    --card: #161b2c;
-    --text: #e5e7eb;
-          --muted: #9ca3af;
-    --accent: #f97316;
-          --accent-2: #38bdf8;
-    --border: #1f2937;
+:root {
+--bg: #0b0f19;
+--bg-alt: #111827;
+--card: #161b2c;
+--text: #e5e7eb;
+--muted: #9ca3af;
+--accent: #f97316;
+--accent-2: #38bdf8;
+--border: #1f2937;
 }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-        background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+background: var(--bg);
+color: var(--text);
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+line-height: 1.6;
 }
-  a { color: inherit; text-decoration: none; }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
 
-  header.nav {
-    position: sticky; top: 0; z-index: 10;
-    background: rgba(11,15,25,0.85);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--border);
-  }
-  .nav-inner {
-        max-width: 980px; margin: 0 auto; padding: 16px 24px;
-    display: flex; justify-content: space-between; align-items: center;
+header.nav {
+position: sticky; top: 0; z-index: 10;
+background: rgba(11,15,25,0.85);
+backdrop-filter: blur(8px);
+border-bottom: 1px solid var(--border);
 }
-  .brand { font-weight: 700; letter-spacing: 0.5px; }
-  .nav-links { display: flex; gap: 24px; font-size: 14px; color: var(--muted); }
-  .nav-links a:hover { color: var(--text); }
+.nav-inner {
+max-width: 980px; margin: 0 auto; padding: 16px 24px;
+display: flex; justify-content: space-between; align-items: center;
+}
+.brand { font-weight: 700; letter-spacing: 0.5px; }
+.nav-links { display: flex; gap: 24px; font-size: 14px; color: var(--muted); }
+.nav-links a:hover { color: var(--text); }
 
-  .hero {
-    padding: 96px 0 64px;
-    text-align: center;
-  }
-  .avatar {
-        width: 96px; height: 96px; border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent), var(--accent-2));
-    display: flex; align-items: center; justify-content: center;
-    font-size: 32px; font-weight: 700; color: #0b0f19;
-    margin: 0 auto 24px;
+.hero {
+padding: 96px 0 64px;
+text-align: center;
 }
-  .hero h1 { font-size: 2.4rem; margin-bottom: 8px; }
-  .hero .role { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin-bottom: 20px; }
-  .hero p.pitch {
-    max-width: 620px; margin: 0 auto 32px; color: var(--muted); font-size: 1.05rem;
-  }
-  .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-  .btn {
-        padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;
-    border: 1px solid var(--border);
+.avatar {
+width: 96px; height: 96px; border-radius: 50%;
+background: linear-gradient(135deg, var(--accent), var(--accent-2));
+display: flex; align-items: center; justify-content: center;
+font-size: 32px; font-weight: 700; color: #0b0f19;
+margin: 0 auto 24px;
 }
-  .btn-primary { background: var(--accent); color: #0b0f19; border-color: var(--accent); }
-  .btn-primary:hover { opacity: 0.9; }
-  .btn-outline:hover { border-color: var(--accent-2); color: var(--accent-2); }
+.hero h1 { font-size: 2.4rem; margin-bottom: 8px; }
+.hero .role { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin-bottom: 20px; }
+.hero p.pitch {
+max-width: 620px; margin: 0 auto 32px; color: var(--muted); font-size: 1.05rem;
+}
+.cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn {
+padding: 12px 22px; border-radius: 999px; font-size: 14px; font-weight: 600;
+border: 1px solid var(--border);
+}
+.btn-primary { background: var(--accent); color: #0b0f19; border-color: var(--accent); }
+.btn-primary:hover { opacity: 0.9; }
+.btn-outline:hover { border-color: var(--accent-2); color: var(--accent-2); }
 
-  section { padding: 64px 0; border-top: 1px solid var(--border); }
-  h2.section-title {
-        font-size: 1.6rem; margin-bottom: 32px; display: flex; align-items: center; gap: 10px;
+section { padding: 64px 0; border-top: 1px solid var(--border); }
+h2.section-title {
+font-size: 1.6rem; margin-bottom: 32px; display: flex; align-items: center; gap: 10px;
 }
-  h2.section-title .tag { color: var(--accent); font-family: monospace; font-size: 1rem; }
+h2.section-title .tag { color: var(--accent); font-family: monospace; font-size: 1rem; }
 
-  .about p { color: var(--muted); max-width: 720px; margin-bottom: 16px; }
-  .about strong { color: var(--text); }
+.about p { color: var(--muted); max-width: 720px; margin-bottom: 16px; }
+.about strong { color: var(--text); }
 
-  .skills-grid {
-        display: flex; flex-wrap: wrap; gap: 10px;
+.skills-grid {
+display: flex; flex-wrap: wrap; gap: 10px;
 }
-  .skill-pill {
-        background: var(--card); border: 1px solid var(--border);
-    padding: 8px 16px; border-radius: 8px; font-size: 14px; color: var(--text);
-}
-
-  .project-card {
-        background: var(--card); border: 1px solid var(--border); border-radius: 16px;
-    padding: 32px; display: grid; gap: 20px;
-}
-  .project-card .project-header {
-        display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;
-}
-  .project-card h3 { font-size: 1.3rem; }
-  .project-card .project-status {
-        font-size: 12px; color: var(--accent-2); border: 1px solid var(--accent-2);
-    padding: 4px 10px; border-radius: 999px; white-space: nowrap;
-}
-  .project-card p { color: var(--muted); }
-  .project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-  .project-tags span {
-        font-size: 12px; background: var(--bg-alt); border: 1px solid var(--border);
-    padding: 4px 10px; border-radius: 6px; color: var(--muted);
-}
-  .project-links { display: flex; gap: 14px; font-size: 14px; }
-  .project-links a { color: var(--accent-2); font-weight: 600; }
-  .project-links a:hover { text-decoration: underline; }
-
-  .contact-box {
-        background: var(--card); border: 1px solid var(--border); border-radius: 16px;
-    padding: 40px; text-align: center;
-}
-  .contact-box p { color: var(--muted); margin-bottom: 24px; }
-
-  footer {
-        padding: 32px 0; text-align: center; color: var(--muted); font-size: 13px;
-    border-top: 1px solid var(--border);
+.skill-pill {
+background: var(--card); border: 1px solid var(--border);
+padding: 8px 16px; border-radius: 8px; font-size: 14px; color: var(--text);
 }
 
-  @media (max-width: 640px) {
-    .nav-links { gap: 14px; font-size: 13px; }
-    .hero { padding: 72px 0 48px; }
-    .hero h1 { font-size: 1.9rem; }
-    section { padding: 48px 0; }
+.projects-grid { display: grid; gap: 24px; }
+
+.project-card {
+background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+padding: 32px; display: grid; gap: 20px;
+}
+.project-card .project-header {
+display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px;
+}
+.project-card h3 { font-size: 1.3rem; }
+.project-card .project-status {
+font-size: 12px; color: var(--accent-2); border: 1px solid var(--accent-2);
+padding: 4px 10px; border-radius: 999px; white-space: nowrap;
+}
+.project-card p { color: var(--muted); }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.project-tags span {
+font-size: 12px; background: var(--bg-alt); border: 1px solid var(--border);
+padding: 4px 10px; border-radius: 6px; color: var(--muted);
+}
+.project-links { display: flex; gap: 14px; font-size: 14px; }
+.project-links a { color: var(--accent-2); font-weight: 600; }
+.project-links a:hover { text-decoration: underline; }
+
+.contact-box {
+background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+padding: 40px; text-align: center;
+}
+.contact-box p { color: var(--muted); margin-bottom: 24px; }
+
+footer {
+padding: 32px 0; text-align: center; color: var(--muted); font-size: 13px;
+border-top: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+.nav-links { gap: 14px; font-size: 13px; }
+.hero { padding: 72px 0 48px; }
+.hero h1 { font-size: 1.9rem; }
+section { padding: 48px 0; }
 }
 </style>
-  </head>
-  <body>
+</head>
+<body>
 
-  <header class="nav">
-  <div class="nav-inner">
-  <div class="brand">Juliana Bertti</div>
-  <nav class="nav-links">
-  <a href="#sobre">Sobre</a>
-  <a href="#projetos">Projetos</a>
-  <a href="#skills">Skills</a>
-  <a href="#contato">Contato</a>
-  </nav>
-  </div>
-  </header>
+<header class="nav">
+<div class="nav-inner">
+<div class="brand">Juliana Bertti</div>
+<nav class="nav-links">
+<a href="#sobre">Sobre</a>
+<a href="#projetos">Projetos</a>
+<a href="#skills">Skills</a>
+<a href="#contato">Contato</a>
+</nav>
+</div>
+</header>
 
-  <main class="wrap">
+<main class="wrap">
 
-  <section class="hero" id="topo" style="border-top:none;">
-  <div class="avatar">JB</div>
-  <h1>Juliana Bertti</h1>
-  <div class="role">Desenvolvedora de Software - Aplicacoes Web</div>
-  <p class="pitch">
-  Construo aplicacoes web full-stack com TypeScript, Next.js e Supabase, unindo
+<section class="hero" id="topo" style="border-top:none;">
+<div class="avatar">JB</div>
+<h1>Juliana Bertti</h1>
+<div class="role">Desenvolvedora de Software - Aplicacoes Web</div>
+<p class="pitch">
+Construo aplicacoes web full-stack com TypeScript, Next.js e Supabase, unindo
 visao de produto e experiencia empreendedora a engenharia de software para
 transformar problemas reais em solucoes digitais funcionais.
-  </p>
-  <div class="cta-row">
-  <a class="btn btn-primary" href="https://github.com/julianabertti" target="_blank" rel="noopener">Ver GitHub</a>
-  <a class="btn btn-outline" href="https://www.linkedin.com/in/juliana-bertti-a2a7a0396" target="_blank" rel="noopener">LinkedIn</a>
-  </div>
-  </section>
+</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://github.com/julianabertti" target="_blank" rel="noopener">Ver GitHub</a>
+<a class="btn btn-outline" href="https://www.linkedin.com/in/juliana-bertti-a2a7a0396" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</section>
 
-  <section id="sobre" class="about">
-  <h2 class="section-title"><span class="tag">01.</span> Sobre mim</h2>
-  <p>
-  Sou <strong>Juliana Bertti</strong>, de Sao Paulo, e estou em transicao de carreira
+<section id="sobre" class="about">
+<h2 class="section-title"><span class="tag">01.</span> Sobre mim</h2>
+<p>
+Sou <strong>Juliana Bertti</strong>, de Sao Paulo, e estou em transicao de carreira
 para a Engenharia de Software. Venho de uma trajetoria empreendedora, o que me deu
 uma visao de negocio e de dados que carrego para dentro do codigo: penso em cada
 funcionalidade como uma forma de resolver um problema real para quem vai usar o produto.
-  </p>
-  <p>
-  Meu principal projeto ate aqui e o <strong>Mafflix</strong>, uma plataforma de
+</p>
+<p>
+Meu principal projeto ate aqui e o <strong>Mafflix</strong>, uma plataforma de
 membros inspirada na experiencia da Netflix, criada para organizar o conteudo de um
 programa de mentoria em Modulos -> Trilhas -> Aulas, com autenticacao, controle de
 acesso, acompanhamento de progresso e historico de cada aluna.
-  </p>
-  <p>
-  Estudo na PUCRS e sigo aprofundando conhecimentos em desenvolvimento full-stack,
-  arquitetura de sistemas, banco de dados e inteligencia artificial, sempre com o
+</p>
+<p>
+Tambem gosto de transformar problemas do dia a dia em ferramentas praticas, como um
+simulador de metas financeiras e uma planilha automatizada de acompanhamento de
+objetivos, unindo minha experiencia como educadora financeira a pratica de codigo.
+</p>
+<p>
+Estudo na PUCRS e sigo aprofundando conhecimentos em desenvolvimento full-stack,
+arquitetura de sistemas, banco de dados e inteligencia artificial, sempre com o
 objetivo de construir produtos escalaveis e centrados no usuario.
-  </p>
-  </section>
+</p>
+</section>
 
-  <section id="projetos">
-  <h2 class="section-title"><span class="tag">02.</span> Projetos</h2>
-  <div class="project-card">
-  <div class="project-header">
-  <h3>Mafflix</h3>
-  <span class="project-status">Em producao</span>
-  </div>
-  <p>
-  Plataforma de membros inspirada na Netflix para hospedar conteudos de um
+<section id="projetos">
+<h2 class="section-title"><span class="tag">02.</span> Projetos</h2>
+<div class="projects-grid">
+
+<div class="project-card">
+<div class="project-header">
+<h3>Mafflix</h3>
+<span class="project-status">Em producao</span>
+</div>
+<p>
+Plataforma de membros inspirada na Netflix para hospedar conteudos de um
 programa de mentoria. Organizacao em Modulos -> Trilhas -> Aulas, com painel
 administrativo completo para gestao de series, episodios e alunas.
 </p>
@@ -201,8 +210,59 @@ fluxo proprio de convite via links unicos para as alunas.
 </div>
 <div class="project-links">
 <a href="https://juflix-lake.vercel.app/" target="_blank" rel="noopener">Ver projeto</a>
-  <a href="https://github.com/julianabertti/mafflix" target="_blank" rel="noopener">Codigo no GitHub</a>
+<a href="https://github.com/julianabertti/mafflix" target="_blank" rel="noopener">Codigo no GitHub</a>
 </div>
+</div>
+
+<div class="project-card">
+<div class="project-header">
+<h3>Simulador de Meta Financeira</h3>
+</div>
+<p>
+Calculadora interativa que ajuda a planejar o caminho ate uma meta financeira:
+a partir do valor da meta, do quanto ja foi guardado, do aporte mensal e do
+prazo, calcula quanto ainda falta, o valor necessario por mes e mostra o
+progresso em uma barra visual.
+</p>
+<p>
+Construida em HTML, CSS e JavaScript puro, unindo minha vivencia como
+educadora financeira a pratica de logica de programacao e manipulacao do DOM.
+</p>
+<div class="project-tags">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/julianabertti/simulador-meta-financeira" target="_blank" rel="noopener">Codigo no GitHub</a>
+</div>
+</div>
+
+<div class="project-card">
+<div class="project-header">
+<h3>Sistema de Responsabilizacao e Performance</h3>
+</div>
+<p>
+Planilha automatizada no Excel para acompanhar metas pessoais - aprendizagem,
+criacao de conteudo, prospeccao de clientes e saude - organizadas em blocos,
+com prazo, progresso e status calculado automaticamente.
+</p>
+<p>
+Gera tambem uma aba de Dashboard com indicadores gerais, resumo por bloco e
+graficos de evolucao. Disponivel em duas versoes: Office Scripts (TypeScript)
+e VBA, para diferentes versoes do Excel.
+</p>
+<div class="project-tags">
+<span>Excel</span>
+<span>VBA</span>
+<span>Office Scripts</span>
+<span>Automacao</span>
+</div>
+<div class="project-links">
+<a href="https://github.com/julianabertti/sistema-responsabilizacao" target="_blank" rel="noopener">Codigo no GitHub</a>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -211,13 +271,16 @@ fluxo proprio de convite via links unicos para as alunas.
 <div class="skills-grid">
 <span class="skill-pill">TypeScript</span>
 <span class="skill-pill">JavaScript</span>
-  <span class="skill-pill">React</span>
-  <span class="skill-pill">Next.js</span>
-  <span class="skill-pill">Supabase</span>
-  <span class="skill-pill">PostgreSQL</span>
-  <span class="skill-pill">Tailwind CSS</span>
-  <span class="skill-pill">Vercel</span>
-  <span class="skill-pill">Git e GitHub</span>
+<span class="skill-pill">React</span>
+<span class="skill-pill">Next.js</span>
+<span class="skill-pill">Supabase</span>
+<span class="skill-pill">PostgreSQL</span>
+<span class="skill-pill">HTML</span>
+<span class="skill-pill">CSS</span>
+<span class="skill-pill">Tailwind CSS</span>
+<span class="skill-pill">Vercel</span>
+<span class="skill-pill">VBA / Office Scripts</span>
+<span class="skill-pill">Git e GitHub</span>
 <span class="skill-pill">Arquitetura de aplicacoes</span>
 <span class="skill-pill">Analise de dados</span>
 </div>
@@ -227,19 +290,18 @@ fluxo proprio de convite via links unicos para as alunas.
 <h2 class="section-title"><span class="tag">04.</span> Contato</h2>
 <div class="contact-box">
 <p>Aberta a oportunidades, colaboracoes e conversas sobre engenharia de software.</p>
-  <div class="cta-row">
-  <a class="btn btn-primary" href="https://www.linkedin.com/in/juliana-bertti-a2a7a0396" target="_blank" rel="noopener">Falar no LinkedIn</a>
+<div class="cta-row">
+<a class="btn btn-primary" href="https://www.linkedin.com/in/juliana-bertti-a2a7a0396" target="_blank" rel="noopener">Falar no LinkedIn</a>
 <a class="btn btn-outline" href="https://github.com/julianabertti" target="_blank" rel="noopener">Ver GitHub</a>
-  </div>
-  </div>
-  </section>
+</div>
+</div>
+</section>
 
-  </main>
+</main>
 
-  <footer>
-  Feito por Juliana Bertti - Sao Paulo, Brasil
-  </footer>
+<footer>
+Feito por Juliana Bertti - Sao Paulo, Brasil
+</footer>
 
-  </body>
-  </html>
-  
+</body>
+</html>
